@@ -1,0 +1,54 @@
+[
+    {
+        "firstName": "Caty",
+        "lastName": "Redford",
+        "birthDate": "07/16/2022",
+        "gender": "Female",
+        "email": "caty@gmail.com",
+        "phoneNumber": "0128960256",
+        "grade": "A",
+        "studentId": "7856326",
+        "semester": "Spring",
+        "address": "NY",
+        "img": "https://placeimg.com/192/192/people"
+    },
+    {
+        "firstName": "Nathy",
+        "lastName": "Red",
+        "birthDate": "07/16/2022",
+        "gender": "Female",
+        "email": "Nahty@gmail.com",
+        "phoneNumber": "0128960256",
+        "grade": "A",
+        "studentId": "7856326",
+        "semester": "Spring",
+        "address": "California",
+        "img": "https://placeimg.com/192/192/people"
+    },
+    {
+        "firstName": "Ross",
+        "lastName": "Geller",
+        "birthDate": "07/16/2022",
+        "gender": "Female",
+        "email": "ross@gmail.com",
+        "phoneNumber": "0128960256",
+        "grade": "A+",
+        "studentId": "7856326",
+        "semester": "Spring",
+        "address": "Bedford",
+        "img": "https://placeimg.com/192/192/people"
+    },
+    {
+        "firstName": "Monica",
+        "lastName": "Geller",
+        "birthDate": "07/16/2022",
+        "gender": "Female",
+        "email": "mon@gmail.com",
+        "phoneNumber": "0128960256",
+        "grade": "B",
+        "studentId": "7856326",
+        "semester": "Spring",
+        "address": "Dhaka",
+        "img": "https://placeimg.com/192/192/people"
+    }
+]
