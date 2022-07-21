@@ -9,12 +9,12 @@ const Students = () => {
 
     // const [students, setStudents] = useState([]);
     // useEffect(() => {
-    //     fetch('http://localhost:5000/students')
+    //     fetch('https://blooming-citadel-98536.herokuapp.com/students')
     //         .then(res => res.json())
     //         .then(data => setStudents(data));
     // }, []);
 
-    const { data: students, isLoading, refetch } = useQuery('students', () => fetch('http://localhost:5000/students', {
+    const { data: students, isLoading, refetch } = useQuery('students', () => fetch('https://blooming-citadel-98536.herokuapp.com/students', {
         method: 'GET',
         headers: {
             'content-type': 'application/json'

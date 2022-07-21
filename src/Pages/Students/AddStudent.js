@@ -38,7 +38,7 @@ const AddStudent = () => {
                     }
                     console.log(student)
                     //send to my database
-                    fetch('http://localhost:5000/students', {
+                    fetch('https://blooming-citadel-98536.herokuapp.com/students', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json'

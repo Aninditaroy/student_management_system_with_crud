@@ -4,7 +4,7 @@ const StudentDetails = () => {
     const { studentID } = useParams();
     const [studentDetails, setStudentDetails] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/students/${studentID}`
+        const url = `https://blooming-citadel-98536.herokuapp.com/students/${studentID}`
         fetch(url)
             .then(res => res.json())
             .then(data => setStudentDetails(data))
