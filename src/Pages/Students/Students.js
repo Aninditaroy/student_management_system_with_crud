@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
-
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 const Students = ({ student, index }) => {
-    const { firstName, lastName, birthDate, gender, email, phoneNumber, grade, studentId, semester, address, img } = student
+    const { _id, firstName, lastName, birthDate, gender, email, phoneNumber, grade, studentId, semester, address, img } = student;
+    const navigate = useNavigate();
+    const navigateToStudentDetails = (id) => {
+        navigate(`/students/${id}`)
+    }
     return (
         <>
             <tr>
@@ -19,13 +23,13 @@ const Students = ({ student, index }) => {
                 <td>{gender}</td>
                 <td class="p-2">
                     <div class="flex justify-center">
-                        <button className='w-8 h-8 bg-blue-200 rounded-full p-5 flex items-center justify-center mr-2'>
+                        <button title='View' onClick={() => navigateToStudentDetails(_id)} className='w-8 h-8 bg-blue-200 rounded-full p-5 flex items-center justify-center mr-2'>
                             <i class="uil uil-eye text-2xl hover:text-blue-500"></i>
                         </button>
-                        <button className='w-8 h-8 bg-blue-200 rounded-full p-5 flex items-center justify-center mr-2'>
+                        <button title='Edit' className='w-8 h-8 bg-blue-200 rounded-full p-5 flex items-center justify-center mr-2'>
                             <i class="uil uil-edit text-2xl hover:text-blue-500"></i>
                         </button>
-                        <button className='w-8 h-8 bg-blue-200 rounded-full p-5 flex items-center justify-center mr-2'>
+                        <button title='Delete' className='w-8 h-8 bg-blue-200 rounded-full p-5 flex items-center justify-center mr-2'>
                             <i class="uil uil-trash-alt text-2xl hover:text-blue-500"></i>
                         </button>
                     </div>
