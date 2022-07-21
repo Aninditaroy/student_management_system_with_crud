@@ -10,7 +10,7 @@ const StudentDetails = () => {
             .then(data => setStudentDetails(data))
     }, [studentDetails])
 
-    const { _id, firstName, lastName, birthDate, gender, email, phoneNumber, grade, studentId, semester, address, img } = studentDetails;
+    const { _id, firstName, lastName, birthDate, gender, email, phoneNumber, grade, studentId, semester, address, imgUrl } = studentDetails;
     console.log(studentDetails)
     return (
         <section class="h-screen bg-gradient-to-bl from-blue-500 to-blue-200">
@@ -19,13 +19,14 @@ const StudentDetails = () => {
                 <div class="p-8 w-96 cursor-pointer rounded-3xl bg-gray-100 transition duration-300 ease-in-out hover:scale-105 hover:drop-shadow-2xl">
 
                     <div class="-mb-20 -translate-y-20 transform">
-                        <img src={img} alt="Kobe Bryant" title="Kobe Bryant" class="mx-auto w-24 h-24 rounded-full" />
+                        <img src={imgUrl} alt="" title={firstName} class="mx-auto w-24 h-24 rounded-full" />
                     </div>
-                    <div class="text-center mt-10">
-                        <h3 class="text-center text-2xl mb-2 font-bold"><i class="uil uil-user-circle"></i> {firstName}{lastName}</h3>
-                        <h3 class="text-center text-sm font-medium"><i class="uil uil-envelope"></i> {email}</h3>
-                        <h3 class="text-center text-sm font-medium"><i class="uil uil-phone"></i> {phoneNumber}</h3>
+                    <div class="text-center mt-5">
                         <span class="text-sm font-semibold text-blue-600">Student ID: {studentId}</span>
+                        <h3 class="text-center text-2xl my-2 font-bold"><i class="uil uil-user-circle"></i> {firstName} {lastName}</h3>
+                        <h3 class="my-1 text-center text-sm font-medium"><i class="uil uil-envelope"></i> {email}</h3>
+                        <h3 class="my-1 text-center text-sm font-medium"><i class="uil uil-phone"></i> {phoneNumber}</h3>
+
                     </div>
                     <div class="text-center text-black">
                         <h3 class="text-sm font-medium">Gender: {gender}</h3>
@@ -39,9 +40,7 @@ const StudentDetails = () => {
                     <div class="text-center text-black">
 
                     </div>
-                    {/* <div class="text-center">
-                    <button class="rounded-xl bg-blue-500 px-24 py-2 text-white font-semibold">Edit</button>
-                </div> */}
+
                 </div>
             </div>
         </section>

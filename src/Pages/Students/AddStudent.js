@@ -26,7 +26,7 @@ const AddStudent = () => {
                     const student = {
                         firstName: data.firstName,
                         lastName: data.lastName,
-                        img: img,
+                        imgUrl: img,
                         gender: data.gender,
                         email: data.email,
                         birthDate: data.birthDate,
@@ -64,7 +64,7 @@ const AddStudent = () => {
 
             <section className='bg-blue-100  flex justify-center items-center h-full'>
                 <div>
-                    <span className='bg-blue-100  flex mx-10'><Link to='/' class="btn bg-blue-500 text-white mt-2"><i class="uil uil-backward text-lg mr-2"></i> Back To Home</Link></span>
+                    <span className='flex mx-10'><Link to='/' class="btn bg-blue-500 text-white mt-2 hover:bg-blue-600 border-none"><i class="uil uil-backward text-lg mr-2"></i> Back To Home</Link></span>
                     <div className='flex justify-center items-center'>
                         <div class="card w-96 md:w-1/2 lg:w-1/2 xl:w-1/3 mt-5 mb-16 glass mx-auto ">
                             <figure><img src="https://img.freepik.com/premium-vector/students-sitting-book_118813-3188.jpg?w=2000" alt="" /></figure>
